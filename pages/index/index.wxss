@@ -1,0 +1,140 @@
+/**index.wxss**/
+.temp {
+  text-align: center;
+  font-size: 200rpx;
+  line-height: 280rpx;
+  opacity: 0.8;
+}
+
+.weather {
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 56rpx;
+  opacity: 0.65;
+}
+
+.weather-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 750rpx;
+  padding-top: 20rpx;
+  padding-bottom: 250rpx;
+}
+
+.weather-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.timetips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.timetips-icon {
+  margin-right: 10rpx;
+  width: 36rpx;
+  height: 28rpx;
+}
+
+.timetips-text {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+
+.forecast-list {
+  display: flex;
+  
+}
+
+.forecast-item {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  width: 120rpx;
+  align-items: center;
+}
+
+.forecast-weather {
+  margin-top: 50rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.forecast-time {
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.forecast-temp {
+  margin-top: 46rpx;
+  font-size: 50rpx;
+  line-height: 56rpx;
+} 
+
+.current-weather-details {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 90rpx;
+  opacity: 0.5;
+  bottom: 0rpx;
+  left: 40rpx;
+  right: 40rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.current-date {
+  flex-grow: 1;
+  padding-right: 30rpx;
+  text-align: left;
+}
+
+.current-temp {
+  flex-grow: 1;
+  padding-right: 30rpx;
+  text-align: right;
+}
+
+.arrow-next {
+  width: 13rpx;
+  height: 24rpx;
+} 
+
+.location-wrapper {
+  margin-bottom: 60rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-icon {
+  margin-right: 10rpx;
+  width: 21rpx;
+  height: 30rpx;
+}
+
+.location-text {
+  opacity: 0.5;
+}
+
+.location-tips {
+  margin-top: 10rpx;
+  text-align: center;
+  opacity: 0.5;
+} 

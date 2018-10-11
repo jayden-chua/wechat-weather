@@ -1,0 +1,32 @@
+<view class="weather-wrapper">
+  <view class="location-wrapper">
+    <view class="location" hover-class="none" hover-stop-propagation="false">
+      <image class="location-icon" src="/images/location-icon.png"></image>
+      <view class="location-text">location text holder</view>
+    </view>
+    <view class="location-tips">点击获取当前位置</view>
+  </view>
+  <view class="temp">{{ nowTemp }}</view>
+  <view class="weather">{{ nowWeather }}</view>
+  <image class="weather-bg" src="{{ nowWeatherBackground }}" mode="scaleToFill"/>
+  <view class="current-weather-details" bindtap="onTapWeatherDetails">
+    <view class="current-date">{{ currentDate }}</view>
+    <view class="current-temp">{{ currentTempRange }}</view>
+    <image class="arrow-next" src="/images/arrow.png" />
+  </view>
+</view>
+
+<view class="timetips">
+  <image class="timetips-icon" src="/images/time-icon.png" />
+  <view class="timetips-text">未来24小时天气预测</view>
+</view>
+
+<scroll-view scroll-x>
+  <view class="forecast-list">
+    <view class="forecast-item" wx:key="{{ item }}" wx:for="{{ forecast }}">
+      <view class="forecast-time">{{ item.time }}</view>
+      <image src="{{ item.icon }}" class="forecast-weather" />
+      <view class="forecast-temp">{{ item.temp }}</view>
+    </view>
+  </view>
+</scroll-view>
